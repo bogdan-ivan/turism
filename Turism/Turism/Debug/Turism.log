@@ -1,0 +1,19 @@
+﻿  Agentie.cpp
+  Generating Code...
+  Compiling...
+  main.cpp
+c:\facultate\semestrul 2\programare orientata pe obiect\lab 8 po 15.04.2019\turism\turism\agentie.h(44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  c:\facultate\semestrul 2\programare orientata pe obiect\lab 8 po 15.04.2019\turism\turism\main.cpp(9): note: see reference to function template instantiation 'bool Agentie::updateOffer<float>(int,UPDATE,T)' being compiled
+          with
+          [
+              T=float
+          ]
+c:\facultate\semestrul 2\programare orientata pe obiect\lab 8 po 15.04.2019\turism\turism\agentie.h(47): warning C4244: 'argument': conversion from 'TIPURI' to 'float', possible loss of data
+  c:\facultate\semestrul 2\programare orientata pe obiect\lab 8 po 15.04.2019\turism\turism\main.cpp(10): note: see reference to function template instantiation 'bool Agentie::updateOffer<TIPURI>(int,UPDATE,T)' being compiled
+          with
+          [
+              T=TIPURI
+          ]
+  Generating Code...
+  Turism.vcxproj -> C:\FACULTATE\Semestrul 2\Programare orientata pe obiect\Lab 8 PO 15.04.2019\Turism\Debug\Turism.exe
+  Turism.vcxproj -> C:\FACULTATE\Semestrul 2\Programare orientata pe obiect\Lab 8 PO 15.04.2019\Turism\Debug\Turism.pdb (Full PDB)
