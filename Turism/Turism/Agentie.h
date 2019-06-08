@@ -1,6 +1,7 @@
 #pragma once
 #include "Oferta.h"
 #include <map>
+#include <vector>
 
 enum SORT
 {
@@ -27,39 +28,17 @@ private:
 public:
 	Agentie();
 	~Agentie();
+	void menu();
 	bool insertOffer(TIPURI type, float price, std::string departure, std::string returning, destination dest);
 	bool deleteOffer(int ID);
-	template <typename T>
-	bool updateOffer(int ID, UPDATE updateType, T argument);
+	bool updateOffer(int ID, UPDATE updateType, float argument);
+	bool updateOffer(int ID, UPDATE updateType, std::string argument);
+	bool updateOffer(int ID, UPDATE updateType, destination);
 	void printOffers(SORT printType);
+private:
+	bool m_enabled;
+	std::vector<Oferta*> sorting;
 };
 
-// nu este implementat bine template-ul
-// merg doar int,float
-template <typename T>
-bool Agentie::updateOffer(int ID, UPDATE updateType, T argument)
-{
-	switch (updateType)
-	{
-	case TIP:
-		info.at(ID)->setTip(argument);
-		break;
-	case PRET:
-		info.at(ID)->setPret(argument);
-		break;
-	case PLECARE:
-		//info.at(ID)->setPlecare(argument);
-		break;
-	case INTOARCERE:
-		//info.at(ID)->setIntoarcere(argument);
-		break;
-	case DESTINATIE:
-		//info.at(ID)->setDestinatie(argument);
-		break;
-	default:
-		break;
-	}
 
-	return false;
-}
 
