@@ -6,7 +6,7 @@
 Agentie::Agentie()
 	:m_enabled(true)
 {
-
+	sorting.reserve(5);
 }
 
 Agentie::~Agentie()
